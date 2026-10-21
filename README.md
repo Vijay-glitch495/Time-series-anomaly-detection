@@ -1,22 +1,30 @@
-# Machine Learning using Pre-trained APIs on Google Cloud
+# Time-Series Insights API Study
 
-This folder contains demos, codes, notebooks and references using pre-built ML APIs like vision, natural language, STT, TTS and transaction etc. Demos and notebooks uses public datasets. 
+**A notebook-based exploration of Google's TimeSeries Insights API.**
 
+The repository contains a time-series anomaly-detection notebook, a JSON data artifact, and saved illustrations. The previous README listed several unrelated Google Cloud API examples; this guide describes the files actually present here.
 
-## Completed Notebooks
+## Repository contents
 
-- [x] 01-01 TimeSeries Insights API
-- [x] 01-02 Cloud Natural Language AI
+| File | Purpose |
+| --- | --- |
+| `01-01-realtime-anomaly-detection-using-timeseries-insights-api.ipynb` | Main notebook |
+| `timeseries-anomaly.json` | Time-series data artifact used by the study |
+| `api_generated_timeseries.png` | Saved illustration |
+| `appending_new_event.png` | Saved event-append illustration |
+| `timeseries_json.png`, `timeseries_tabular.png` | Data representation illustrations |
 
-## In-progress
+## Inspect the study
 
-- [ ] 01-04 Speech-to-Text API
+```bash
+git clone https://github.com/Vijay-glitch495/Time-series-anomaly-detection.git
+cd Time-series-anomaly-detection
+```
 
-## TODO
+Open the notebook in Jupyter or a compatible notebook viewer. Review its setup cells, data provenance, API calls, and outputs before running it. Execution requires a suitable Google Cloud project and credentials; verify current service availability and billing requirements in official Google Cloud documentation. Do not commit credentials.
 
-- [ ] 01-03 Media Translation
-- [ ] 01-05 Text-to-Speech API
-- [ ] 01-06 Translation AI
-- [ ] 01-07 Data Loss Prevention 
-- [ ] 01-08 Cloud Vision
-- [ ] 01-09 Video Intelligence AI 
+## Scope and outcomes
+
+The repository's outcome is a notebook and saved demonstration artifacts. It does not establish a continuously running monitoring service, measured production latency, or independently validated anomaly-detection accuracy. A fresh cloud execution was not performed during this documentation update.
+
+Before using the study in a research result or a production setting, document the dataset source, event timestamps, anomaly labels, evaluation protocol, and service configuration. Preserve applicable notebook/data attribution and the existing [LICENSE](LICENSE).
